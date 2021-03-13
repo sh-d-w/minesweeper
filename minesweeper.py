@@ -114,7 +114,7 @@ def create_board(p_x_y):
             board[l_y][l_x] = '*'
             l_bombs -= 1
 
-    # initialize empty played positions board:
+    # initialize empty player positions board:
     i = 0
     game_board = []
     while i < p_x_y[1]:
@@ -130,7 +130,7 @@ def create_board(p_x_y):
         game_board.append(arr)
         i += 1
 
-    # loop through and if bomb then loop around it and increment by 1
+    # loop through and if bomb then loop around it and increments the area around it by 1
     i = 0
     while i < p_x_y[1]:
         j = 0
